@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Animation</title>
+  </head>
+
+  <body>
+    <form>
+      <!--Username Input-->
+      <div class="field-name">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+
+      <!--Email Input-->
+      <div class="field-email innactive">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+
+      <!--Password Input-->
+      <div class="field-password innactive">
+        <i class="fas fa-key"></i>
+        <input type="password" placeholder="Password" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+
+      <!--Thank You Message-->
+      <div class="field-finish innactive">
+        <i class="fas fa-heart"></i>
+        <p>Thank You!</p>
+        <i class="fas fa-heart"></i>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
