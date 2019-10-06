@@ -21,6 +21,30 @@ body {
   color: white;
 }
 
+/* The navbar at the top of the screen*/
+.nav-bar {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+
+.main-body {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+
+.left-menu {
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 100%;
+  background-color: brown;
+}
+
 .field-name,
 .field-email,
 .field-password,
@@ -42,7 +66,8 @@ body {
 .field-name i,
 .field-email i,
 .field-password i,
-.field-finish i {
+.field-finish i,
+.nav-bar i {
   padding: 10px;
   cursor: pointer;
 }
@@ -69,6 +94,18 @@ div.active {
   transform: translate(-50%, -50%);
 }
 
+div.menu-inactive {
+  opacity: 1;
+  pointer-events: none;
+  transform: translate(-100%);
+}
+
+div.menu-active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(0);
+}
+
 @keyframes shake {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -90,5 +127,22 @@ div.active {
   }
   100% {
     transform: translate(-50%, -200%) rotate(0deg);
+  }
+}
+@keyframes make-menu-invisible {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes make-menu-visible {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
